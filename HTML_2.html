@@ -6,17 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anime WebPage</title>
     <link rel="stylesheet" href="styles/style_1.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
     <header>
         <h1>Anime WebPage</h1>
     </header>
     <nav class="side_navbar">
-        <a href="#">Home</a>
-        <a href="#">College Reviews</a>
-        <a href="#">Courses</a>
-        <a href="#">Study Materials</a>
-        <a href="#">Login/SignUp</a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+               <a href="#">HOME</a>
+               <a href="#">ABOUT</a>
+               <a href="#">COURSE</a>
+               <a href="#">BLOG</a>
+               <a href="#">CONTACT</a>
+        </div>
+        <i class="fa fa-bars"  onclick="showMenu()"></i>
     </nav>
 
     <main>
@@ -74,5 +79,21 @@
         <a href="#">Refund Policy</a>
         <a href="#">&copy; 2022 | Mohamad Harmouche</a>
     </footer>
+
+
+    <!-------------------JavaScript for toggle Menu-------------->
+    <script>
+        
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
 </body>
 </html>
