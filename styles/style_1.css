@@ -76,3 +76,37 @@ footer a {
     float: left;
     color: white;
 }
+
+
+@media screen and (max-width: 850px) {
+    video{
+        width: 100% !important;
+    }
+    iframe{
+        width: 95% !important; 
+        margin-bottom: 20px; 
+    }
+    img{
+        width: 90% !important;
+    }
+    footer a{
+        width: 100%;
+    }
+  .last_session{
+    min-height: 110vh;
+  }
+  .side_navbar a{
+    width: 100%;
+  }
+  }
+
+  @media screen and (max-width: 450px) {
+  .last_session{
+    min-height: 82vh;
+  }
+  .side_navbar a{
+    width: 100%;
+  }
+  }
+
+
